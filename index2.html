@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    /> -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      /* body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically 
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+
+        width: 100px;
+        background-color: red;
+        border: 3px solid black;
+      } */
+
+      /* .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } */
+
+      .new__card{
+      position: relative;
+      width: 230px;
+      background-color: var(--container-color);
+      box-shadow: 0 4px 16px hsla(335, 35%, 15%, .1);
+      padding: 1rem 1rem 1.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+      overflow: hidden;
+      border-radius: .75rem;
+      transition: .3s;
+
+  }
+  .new__card .new__overlay{
+      width: 250px;
+      height: 250px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+      position: absolute;
+      top: -5rem;
+      left: -.65rem;
+      z-index: 0;
+  }
+  .new__img{
+      position: relative;
+      width: 150px;
+      margin-bottom: var(--mb-2);
+      transition: .3s;
+  }
+  .new__price{
+      font-size: var(--h2-font-size);
+  }
+  .new__title{
+      font-weight: var(--font-medium);
+  }
+  .new__button{
+      display: flex;
+      padding: .5rem;
+      border-radius: .25rem .25rem .75rem .25rem;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+  }
+  .new__card:hover .new__img{
+      transform: translateY(-.5rem);
+  }
+  .swiper-pagination-bullet{
+      background: rgb(175, 42, 64);
+      color: red;
+  }
+  /* span{
+    color: red;
+    background-color: red;
+  } */
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="new__container">
+      <div class="swiper mySwiper" >
+          <div class="swiper-wrapper">
+              <article class="new__card swiper-slide" >
+                  <div class="new__overlay"></div>
+
+                  <img src="assets/image/new1.png" alt="" class="new__img">
+                  <h3 class="new__price">$95</h3>
+                  <h3 class="new__title">Reindeer</h3>
+
+                  <button class="button new__button">
+                      <i class='bx bx-heart new__icon' ></i>
+                  </button>
+              </article>
+
+              <article class="new__card swiper-slide" >
+                  <div class="new__overlay"></div>
+
+                  <img src="assets/image/new2.png" alt="" class="new__img">
+                  <h3 class="new__price">$20</h3>
+                  <h3 class="new__title">Snow Globel</h3>
+
+                  <button class="button new__button">
+                      <i class='bx bx-heart new__icon' ></i>
+                  </button>
+              </article>
+
+              <article class="new__card swiper-slide" >
+                  <div class="new__overlay"></div>
+
+                  <img src="assets/image/new3.png" alt="" class="new__img">
+                  <h3 class="new__price">$75</h3>
+                  <h3 class="new__title">Sledge</h3>
+
+                  <button class="button new__button">
+                      <i class='bx bx-heart new__icon' ></i>
+                  </button>
+              </article>
+
+              <article class="new__card swiper-slide" >
+                  <div class="new__overlay"></div>
+
+                  <img src="assets/image/new4.png" alt="" class="new__img">
+                  <h3 class="new__price">$15</h3>
+                  <h3 class="new__title">Christmas Wreath</h3>
+
+                  <button class="button new__button">
+                      <i class='bx bx-heart new__icon' ></i>
+                  </button>
+              </article>
+          </div>
+          <div class="swiper-pagination"></div>
+      </div>
+  </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+  </body>
+</html>
